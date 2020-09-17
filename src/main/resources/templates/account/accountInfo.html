@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <!-- 引入jQuery -->
+    <script th:src="@{/js/common/jquery-3.4.1.min.js}"></script>
+    <!--<script th:href="@{/js/common/jquery-3.4.1.min.js}"></script>-->
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+
+    <meta charset="UTF-8">
+    <title>用户信息</title>
+</head>
+<body>
+
+<!-- logo    开始    ↓ -->
+<nav class="navbar navbar-inverse" style="margin-bottom: 0px;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                Brand
+            </a>
+        </div>
+        <p class="navbar-text navbar-right" style="margin-right: 30px;"><a href="/index" class="navbar-link" style="margin-right: 30px;">前往主页</a><a href="#" class="navbar-link">帮助</a></p>
+    </div>
+</nav>
+<!-- logo    结束    ↑ -->
+
+<!-- 用户放置头像和背景图片的div    开始    ↓ -->
+<div style="width: 100%; height: 120px; margin-top: 0px;">
+
+</div>
+<!-- 用户放置头像和背景图片的div    结束    ↑ -->
+
+<!-- 用于放置用户信息和修改的主框架    开始    ↓ -->
+<div style="width:80%; height: 500px; margin: 0px auto">
+    <!--信息头-->
+    <div class="panel panel-default">
+        <div class="panel-heading" style="height: 52px;">
+            <span style="font-size: 24px; float: left;">账号信息</span>
+        </div>
+        <div class="panel-body">
+            Panel content
+        </div>
+    </div>
+</div>
+<!-- 用于放置用户信息和修改的主框架    结束    ↑ -->
+
+
+
+</body>
+</html>

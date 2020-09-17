@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.yin.mapper.AccountMapper">
+    <resultMap id="AccountMap" type="cn.yin.entity.Account">
+        <result column="id" property="id"/>
+        <result column="login_name" property="loginName"/>
+        <result column="password" property="password"/>
+        <result column="role" property="role"/>
+    </resultMap>
+
+    <select id="findAccountByLoginNameAndPassword" resultMap="AccountMap">
+        select * from account
+        where login_name = #{loginName} and password = #{password}
+    </select>
+</mapper>
